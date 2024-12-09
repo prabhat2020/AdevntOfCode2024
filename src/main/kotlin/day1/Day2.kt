@@ -23,8 +23,8 @@ class Day2 {
             recordsDampener += test
         }
 
-        println(records)
-        println(recordsDampener)
+//        println(records)
+//        println(recordsDampener)
         return records
     }
 

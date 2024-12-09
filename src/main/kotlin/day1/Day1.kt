@@ -24,7 +24,7 @@ class Day1 {
             abs(first - second)
         }
 
-        println(result)
+        //   println(result)
 
         val getLeftSideData = getInputData.map { line ->
             line.substringBefore(" ").toLong()
@@ -36,6 +36,7 @@ class Day1 {
         val rihtSideFrequency = getRightSideData.groupingBy { it }.eachCount()
         getLeftSideData.fold(0) { acc: Long, i: Long ->
             acc + i * rihtSideFrequency.getOrDefault(i, 0)
-        }.also(::println)
+        }
+        //    .also(::println)
     }
 }
